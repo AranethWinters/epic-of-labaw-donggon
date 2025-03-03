@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://3he3faoisflj"]
+
+[ext_resource type="Texture2D" uid="uid://ctbsftujyfhx" path="res://Hammer.png" id="1_l7rpd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vfs84"]
+
+[node name="HookPoint" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10, 0)
+shape = SubResource("CircleShape2D_vfs84")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-9.53674e-07, 9.53674e-07)
+rotation = 0.785398
+texture = ExtResource("1_l7rpd")

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dceyf44y4he8d"]
+
+[ext_resource type="Script" path="res://character_body_2d.gd" id="1_s0en7"]
+[ext_resource type="Texture2D" uid="uid://t8hsmusjhk85" path="res://Large Luigi.png" id="2_fl4yn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s2s7c"]
+radius = 56.0
+height = 112.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_s0en7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.750099, 0.99992)
+scale = Vector2(0.294444, 0.294444)
+texture = ExtResource("2_fl4yn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_s2s7c")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]

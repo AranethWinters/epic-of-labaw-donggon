@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://q4crwrps22tx"]
+
+[ext_resource type="Texture2D" uid="uid://cssps5ge0e2a2" path="res://Mac.jpg" id="1_43bo8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d1vei"]
+size = Vector2(397.5, 202.75)
+
+[node name="StaticBody2D2" type="StaticBody2D" groups=["Hookable"]]
+position = Vector2(-3, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(882, 586.75)
+scale = Vector2(0.263021, 0.174934)
+texture = ExtResource("1_43bo8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(878.25, 585.375)
+shape = SubResource("RectangleShape2D_d1vei")
