@@ -26,7 +26,7 @@ position = Vector2(264.75, 651)
 shape = SubResource("RectangleShape2D_d1vei")
 
 [node name="Player" parent="." instance=ExtResource("2_jpywu")]
-position = Vector2(135, 494)
+position = Vector2(168, 473)
 
 [node name="Line2D" type="Line2D" parent="Player"]
 texture_filter = 2
