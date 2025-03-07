@@ -1,43 +1,27 @@
-[gd_scene load_steps=6 format=3 uid="uid://dv2wpc4fd3bu5"]
+[gd_scene load_steps=5 format=3 uid="uid://dv2wpc4fd3bu5"]
 
 [ext_resource type="Texture2D" uid="uid://cssps5ge0e2a2" path="res://Mac.jpg" id="1_67g0h"]
 [ext_resource type="PackedScene" uid="uid://dceyf44y4he8d" path="res://player.tscn" id="2_jpywu"]
 [ext_resource type="PackedScene" uid="uid://q4crwrps22tx" path="res://hookable_terrain.tscn" id="3_4ea0w"]
-[ext_resource type="PackedScene" uid="uid://3he3faoisflj" path="res://hook_point.tscn" id="3_w82kx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d1vei"]
 size = Vector2(397.5, 202.75)
 
 [node name="Node2D" type="Node2D"]
 
-[node name="PinJoint2D" type="PinJoint2D" parent="."]
-node_a = NodePath("../Player")
-softness = 16.0
-
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
-position = Vector2(266.5, 650.25)
+position = Vector2(64, 645)
 scale = Vector2(0.253255, 0.172276)
 texture = ExtResource("1_67g0h")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(264.75, 651)
+position = Vector2(63, 651)
 shape = SubResource("RectangleShape2D_d1vei")
 
 [node name="Player" parent="." instance=ExtResource("2_jpywu")]
 position = Vector2(168, 473)
-
-[node name="Line2D" type="Line2D" parent="Player"]
-texture_filter = 2
-texture_repeat = 2
-default_color = Color(1, 0.14902, 0, 1)
-texture_mode = 1
-
-[node name="HookPoint" parent="." instance=ExtResource("3_w82kx")]
-
-[node name="Marker2D2" type="Marker2D" parent="HookPoint"]
-position = Vector2(-15, 0)
 
 [node name="StaticBody2D2" parent="." instance=ExtResource("3_4ea0w")]
 
