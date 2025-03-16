@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=3 uid="uid://bh2pnpdpj4uff"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w0uf1"]
+size = Vector2(658.012, 31)
+
+[node name="Test Stage" type="Node2D"]
+
+[node name="Static Body List" type="Node" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Static Body List"]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Static Body List/StaticBody2D"]
+position = Vector2(576, 641.5)
+shape = SubResource("RectangleShape2D_w0uf1")
+
+[node name="Polygon2D" type="Polygon2D" parent="Static Body List/StaticBody2D/CollisionShape2D"]
+polygon = PackedVector2Array(-586, -15.5, 585, -16.5, 585, 15.5, -586, 16.5)
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Static Body List"]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Static Body List/StaticBody2D2"]
+position = Vector2(576, 9.5)
+shape = SubResource("RectangleShape2D_w0uf1")
+
+[node name="Polygon2D" type="Polygon2D" parent="Static Body List/StaticBody2D2/CollisionShape2D"]
+polygon = PackedVector2Array(-586, -15.5, 585, -16.5, 585, 15.5, -586, 16.5)
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Static Body List"]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Static Body List/StaticBody2D3"]
+position = Vector2(5.48771, 325.002)
+rotation = 1.56887
+shape = SubResource("RectangleShape2D_w0uf1")
+
+[node name="Polygon2D" type="Polygon2D" parent="Static Body List/StaticBody2D3/CollisionShape2D"]
+polygon = PackedVector2Array(-326.971, -16.1425, 329.029, -15.8781, 328.97, 15.1218, -328.031, 14.8555)
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Static Body List"]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Static Body List/StaticBody2D4"]
+position = Vector2(1144.49, 325.002)
+rotation = 1.56887
+shape = SubResource("RectangleShape2D_w0uf1")
+
+[node name="Polygon2D" type="Polygon2D" parent="Static Body List/StaticBody2D4/CollisionShape2D"]
+polygon = PackedVector2Array(-326.971, -16.1425, 329.029, -15.8781, 328.97, 15.1218, -328.031, 14.8555)
