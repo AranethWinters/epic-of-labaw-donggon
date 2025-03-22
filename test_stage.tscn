@@ -1,7 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://bh2pnpdpj4uff"]
+[gd_scene load_steps=5 format=3 uid="uid://bh2pnpdpj4uff"]
+
+[ext_resource type="PackedScene" uid="uid://bti8vlanloo2p" path="res://p_layer.tscn" id="1_w0uf1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vwyws"]
+size = Vector2(1161, 35.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uww70"]
+size = Vector2(1169, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w0uf1"]
-size = Vector2(658.012, 31)
+size = Vector2(649.006, 31)
 
 [node name="Test Stage" type="Node2D"]
 
@@ -11,8 +19,8 @@ size = Vector2(658.012, 31)
 metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Static Body List/StaticBody2D"]
-position = Vector2(576, 641.5)
-shape = SubResource("RectangleShape2D_w0uf1")
+position = Vector2(575.5, 649.25)
+shape = SubResource("RectangleShape2D_vwyws")
 
 [node name="Polygon2D" type="Polygon2D" parent="Static Body List/StaticBody2D/CollisionShape2D"]
 polygon = PackedVector2Array(-586, -15.5, 585, -16.5, 585, 15.5, -586, 16.5)
@@ -21,8 +29,8 @@ polygon = PackedVector2Array(-586, -15.5, 585, -16.5, 585, 15.5, -586, 16.5)
 metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Static Body List/StaticBody2D2"]
-position = Vector2(576, 9.5)
-shape = SubResource("RectangleShape2D_w0uf1")
+position = Vector2(574.5, 9.5)
+shape = SubResource("RectangleShape2D_uww70")
 
 [node name="Polygon2D" type="Polygon2D" parent="Static Body List/StaticBody2D2/CollisionShape2D"]
 polygon = PackedVector2Array(-586, -15.5, 585, -16.5, 585, 15.5, -586, 16.5)
@@ -48,3 +56,6 @@ shape = SubResource("RectangleShape2D_w0uf1")
 
 [node name="Polygon2D" type="Polygon2D" parent="Static Body List/StaticBody2D4/CollisionShape2D"]
 polygon = PackedVector2Array(-326.971, -16.1425, 329.029, -15.8781, 328.97, 15.1218, -328.031, 14.8555)
+
+[node name="PLayer" parent="." instance=ExtResource("1_w0uf1")]
+position = Vector2(576, 537)

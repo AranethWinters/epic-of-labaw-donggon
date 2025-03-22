@@ -10,11 +10,19 @@ config_version=5
 
 [application]
 
-config/name="Workshop Demo"
-run/main_scene="res://main.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/name="Epic of Labaw Doggon"
+run/main_scene="uid://bh2pnpdpj4uff"
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
 
-window/stretch/mode="viewport"
+window/stretch/mode="canvas_items"
+
+[dotnet]
+
+project/assembly_name="Epic of Labaw Doggon"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

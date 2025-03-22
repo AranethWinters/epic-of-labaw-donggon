@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://64imp0hke437"]
 
-[ext_resource type="Script" path="res://assets/projectiles/collectible_arrow.gd" id="1_srhsj"]
+[ext_resource type="Script" uid="uid://cuboiqub2ofjy" path="res://assets/projectiles/collectible_arrow.gd" id="1_srhsj"]
 
 [node name="CollectibleComponent" type="Area2D"]
 collision_layer = 0

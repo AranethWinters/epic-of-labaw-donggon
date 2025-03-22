@@ -1,6 +1,6 @@
-[gd_scene load_steps=21 format=3 uid="uid://bti8vlanloo2p"]
+[gd_scene load_steps=20 format=3 uid="uid://bti8vlanloo2p"]
 
-[ext_resource type="Script" path="res://character_body_2d.gd" id="1_a0fe6"]
+[ext_resource type="Script" uid="uid://h2dkd5fjxsfu" path="res://character_body_2d.gd" id="1_a0fe6"]
 [ext_resource type="Texture2D" uid="uid://cmlv0uubal1ro" path="res://assets/characters/Soldier/Soldier-Idle.png" id="2_cytmm"]
 [ext_resource type="Texture2D" uid="uid://bverchkg86b0" path="res://assets/characters/Soldier/Soldier-Walk.png" id="3_aypt0"]
 
@@ -119,9 +119,6 @@ animations = [{
 radius = 14.4696
 height = 40.0696
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2if3u"]
-size = Vector2(20, 31.9099)
-
 [node name="PLayer" type="CharacterBody2D"]
 position = Vector2(398, 210)
 scale = Vector2(0.898438, 0.867188)
@@ -138,11 +135,3 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-361.739, -243.315)
 shape = SubResource("CapsuleShape2D_je0al")
-
-[node name="Hitbox" type="Area2D" parent="."]
-collision_layer = 2
-collision_mask = 0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
-position = Vector2(-361.739, -245.621)
-shape = SubResource("RectangleShape2D_2if3u")
